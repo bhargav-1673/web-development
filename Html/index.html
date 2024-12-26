@@ -9,22 +9,34 @@
             My first web page
         </title>
         <link rel="icon" href="html5.jpg" type="image/x-icon">
-        <style>
-            html {
-                font-size: 22px
-            }
-            body {
-                background-color: #333;
-                color: whitesmoke;
-            }
-        </style>
+        <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
         <!-- my first web page-->
         <h1>
-            hello world
+            Learning HTML: My first web page
         </h1>
+
+        <strong> Table of contents: </strong>
+        <nav>
+            <ol>
+                <li>
+                    <a href="#Emphasing TEXT"> Using Emphasis.</a>
+                </li>
+                <li>
+                    <a href="#Adding symbols"> Addition of symbols.</a>
+                </li>
+                <li>
+                    <a href="#Lists in HTML"> Lists in HTML.</a>
+                </li>
+                <li>
+                    <a href="#Adding links"> Links in HTML.</a>
+                </li>
+            </ol>
+        </nav>
         <hr>
+
+
         <h2>
             this is a subsection.
         </h2>
@@ -60,8 +72,9 @@
         <hr>
         <hr>
         <!--emphasing text-->
+        <section id="Emphasing TEXT">
         <h2>
-            this section is for emphasing text
+            This section is for emphasing text
         </h2>
         <h3>using em</h3>
         <p>
@@ -73,10 +86,14 @@
         <p>
             this is text is <strong> bold.</strong>
         </p>
+        </section>
+
         <hr>
+
         <!--Adding symbols-->
+        <section id="Adding symbols">
         <h2>
-            adding symbols
+            Adding symbols
         </h2>
         <h3>white spaces</h3>
         <p>
@@ -97,12 +114,19 @@
             this is an addrevation of the world wide web. <abbr title="world wide web">WWW</abbr> . Hover over it to see the full form.
         </p>
         <hr>
+
+        </section>
+        
+        <hr>
+
         <!--adding addresses to web page-->
         <address>
             this section automatically emphasises text <br>
             and also regonizes the line breaks <br>
         </address>
+
         <hr>
+        <section id="Lists in HTML">
         <!--lists in Html-->
         <h2> writing lists in Html:</h2>
         <!--ordered list-->
@@ -130,5 +154,57 @@
             <dt>mountain tops</dt>
             <dd>these are also very cold.</dd>
         </dl>
+        </section>
+        
+        <hr>
+
+        <section id="Adding links">
+        <!--aading links-->
+        <h2>
+            adding links to the web page:
+        </h2>
+        <em>Anchor tags are used to add links</em>
+        <p>
+            For exmaple this is a link to this html tutorial <a href="https://www.youtube.com/watch?v=mJgBOIoGihA"> HTML full course by Dave Grey</a>
+        </p>
+        <p>
+            this is using an abbrevation 
+            <abbr title="Mozzila developer network">
+                <a href="https://developer.mozilla.org/en-US/">MDN</a>
+            </abbr>
+        </p>
+
+        <h2><em>Some additional links:</em></h2>
+        <ol>
+            <li>
+                This is a back to top link --- <a href="#">back to top</a>
+            </li>
+            <li>
+                This is an Download link --- <a href="corvet.jpg" download=""> corvet </a>
+            </li>
+            <li>
+                This is an link to email address --- <a href="mailto:vmbhargavjagabathuni@gmail.com">my email address</a>
+            </li>
+            <li>
+                This is a link to dial a number --- <a href="tel:+91 9059479803"> my number</a>
+            </li>
+            <li>
+                This is a link to open new tab with the given link <a href="https://www.google.com/" target="__blank">Google</a>
+            </li>
+            <li>
+                This is a link which takes us back to Home page <a href="/Html/">Back to Home</a>
+            </li>
+        </ol>
+        </section>
+
+        <hr>
+
+
+
+
+        <hr>
+        &lt;&lt;&lt; &copy; <a href="about.html"> Bhargav </a> &gt;&gt;&gt;
+
+        <p><a href="#">Back to Top</a></p>
     </body>
 </html>
