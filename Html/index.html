@@ -41,6 +41,12 @@
                 <li>
                     <a href="#semantic tags">semantic tags</a>
                 </li>
+                <li>
+                    <a href="#Tables in HTML"> Adding tables</a>
+                </li>
+                <li>
+                    <a href="#input"> forms and input.</a>
+                </li>
             </ol>
         </nav>
         <hr>
@@ -250,6 +256,7 @@
         </section>
         <hr>
 
+        <!--adding semantic tags-->
         <section id="semantic tags">
             <h2>Adding semantic tags: <em>these are further changed using css. <br></em></h2>
             <ol>
@@ -267,13 +274,227 @@
                     <aside>
                         <details>
                             <summary>
-                            What is the processsor in your laptop?
+                                What is the processsor in your laptop?
                             </summary>
                             <p>i7, 12th generation.</p>
                         </details>
                     </aside>
                 </li>
             </ol>
+        </section>
+
+        <hr>
+        <!--adding tables-->
+
+        <section id="Tables in HTML">
+            <h2> Tables in HTML</h2>
+            <em> My education:</em>
+            <table>
+                <caption>
+                    this is table no 1.
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            this is row heading.
+                        </th>
+                        <th scope="col">
+                            Year of completion
+                        </th>
+                        <th scope="col">
+                            Name of the course.
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            1st row.
+                        </th>
+                        <td>
+                            2027
+                        </td>
+                        <td>
+                            Bachelor of computer science and engineering.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">
+                            2nd row.
+                        </th>
+                        <td>
+                            2023
+                        </td>
+                        <td>
+                            Intermediate(12th)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">
+                            3rd row.
+                        </th>
+                        <td>
+                            2021
+                        </td>
+                        <td>
+                            Metric education
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">
+                            4th row.
+                        </th>
+                        <td colspan="2"> examination (multicolumn occupied 2 columns) </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">
+                            5th row.
+                        </th>
+                        <td rowspan="2"> this is for rowspan</td>
+                        <td>
+                            it occupies two rows.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">
+                            6th row.
+                        </th>
+                        <td>when 2 is written in rowspan.</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row">
+                            7th row. <br> this is footer
+                        </th>
+                        <td colspan="2">
+                            this is tables in html
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!--Adding links and forms-->
+        <section id="input">
+            <h2>Forms and Input:</h2>
+            It allows to take information from users and interact with them.
+
+            <form action="https://httpbin.org/get" method="get">
+
+                <fieldset>
+                    <legend><mark>Personal info</mark></legend>
+
+                    <p>
+                        <label for="name"> Enter your name: </label>
+                        <input type="text" name="name of user" id="name" placeholder="Ex:bhargav" required autofocus
+                            autocomplete="on">
+                    </p>
+                    <p>
+                        <label for="lastname">Enter your lastname:</label>
+                        <input type="text" name="last name of user" id="lastname" required autocomplete="on"
+                            placeholder="Ex:Jagabathuni">
+                    </p>
+                    <p>
+                        <label for="for password"> Enter your password:</label>
+                        <input type="password" name="password of user" id="for password" required>
+                    </p>
+                    <p>
+                        <label for="for phone number">Enter your phone number</label>
+                        <input type="tel" name="phone number of user" id="for phone number" required
+                            placeholder="9874561230" pattern="[0-9]{2}[0-9]{2}[0-9]{6}">
+                    </p>
+                    <p>
+                        <label for="year of birth">Enter your year of Birth: </label>
+                        <input type="number" name="birthyear" id="year of birth" value="1990" min="1990" max="2020"
+                            step="1">
+                    </p>
+                    <p>
+                        <label for="gender"> Enter your Gender:</label>
+                        <select name="gender of user" id="gender">
+                            <optgroup label="gropu 1">
+                                <option value="male" selected>Male</option>
+                            </optgroup>
+                            <optgroup label="Group 2">
+                                <option value="female">Female</option>
+                            </optgroup>
+                            <optgroup label="Group 3">
+                                <option value="unable to say">Prefer not to say</option>
+                                <option value="other">Other</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="Drink">Enter your favorite drink:</label>
+                        <input type="text" name="drink of user" id="Drink" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="coffee"></option>
+                            <option value="latte"></option>
+                            <option value="expresso"></option>
+                            <option value="cortado"></option>
+                        </datalist>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><mark>This is Creating a single choice list: example</mark></legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos"> Tacos </label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza"> Pizza </label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other"> Other </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><mark>This form is like a checklist:</mark></legend>
+                    Do you have any pets?
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog"> Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat"> cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish"> Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="Otherpets" value="otherpets">
+                        <label for="otherpets"> Other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><mark>This is a larger text message form:</mark></legend>
+                    <br>
+                    <label for="message">Enter your message here:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="40" rows="20" placeholder="Type your message here..."></textarea>
+                </fieldset>
+                <br>
+
+                <mark>The "Submit " and "Reset" buttons</mark> <br>
+
+                <!--These are submit asnd reset buttons...-->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
         </section>
     </main>
 
@@ -285,6 +506,8 @@
 
         <p><a href="#">Back to Top</a></p>
     </footer>
+
+
 </body>
 
 </html>
