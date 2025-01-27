@@ -1,5 +1,5 @@
 * {
-    font-family: monospace;
+    font-family: monospace
 }
 
 
@@ -9,8 +9,7 @@ p{
 
 body {
     font-size: 22px;
-    background-color: #333;
-    color: #eee;
+    background: papayawhip;
     border: 3px solid white;
 }
 
@@ -23,7 +22,7 @@ body {
 }
 
 h1, h2 {
-    color: aquamarine;
+    color:red;
 }
 
 p span {
@@ -37,4 +36,17 @@ p span {
 
 .uni{
     color : white;
+}
+
+
+#c1 {
+    color: rgb(0,0,255);
+}
+
+#c2{
+    color: red;
+}
+
+#c3{
+    color: rgba(0, 0, 0, 0.468);
 }
