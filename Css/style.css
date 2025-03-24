@@ -10,7 +10,7 @@ p{
 body {
     font-size: 22px;
     background: papayawhip;
-    border: 3px solid white;
+    border: 3px solid black;
 }
 
 .red {
@@ -49,4 +49,19 @@ p span {
 
 #c3{
     color: rgba(0, 0, 0, 0.468);
+}
+
+
+#Percent {
+    border: 2px dashed blue;
+    width: 50%;
+}
+
+#Rootem {
+    font-size: 2rem;
+}
+
+#columns {
+    font-size: 2rem;
+    width: 20ch ;
 }
